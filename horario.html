@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario clinica</title>
+    <link rel="stylesheet" href="base.css">
+
+    <style>
+        .imagem{
+            float: right;
+        }
+        table{
+            align-items: center ;
+            text-align: center;
+            margin: 0 auto;
+            
+        }
+        
+        tr:nth-child(even) {background-color: #f2f2f2}
+
+    </style>
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <!-- Aqui vai o seu menu -->
+            <ul>
+                <li><a href="pagina inicial.html"> <h2>Pagina Inicial</h2> </a></li>
+                <li><a href="sobre a clinica.html"> <h2> Sobre a Clinica </h2></a></li>
+                <li><a href="contato.html"> <h2>Contato </h2></a></li>
+
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <img src="https://www.zarla.com/images/zarla-ultrasade-1x1-2400x2400-20211216-dtcqv4rhm8fxw8tcrqhb.png?crop=1:1,smart&width=250&dpr=2" alt="" width="122">
+                <img class="imagem" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8NDw8NDQ0NDw0NDQ0NDQ0NDQ8NDQ4NFhIXFxYSFhYZHikhGRsmHhYWIjIiJiosLy8vGCA1RjUuOSkuLywBCgoKDg0OFxAQFi4eHh4uLC4uMS4uLi4sLiwsLi4sMDEwLi4uLi4uLCwsLiwsLi4vLi4uLi4uLiwuLi4uLCwuLv/AABEIAIUBegMBIgACEQEDEQH/xAAbAAEBAQADAQEAAAAAAAAAAAAAAQIEBQYDB//EAEQQAAICAQIDBQQFCAYLAAAAAAABAgMRBBIFITEGE0FRkSJhcYEUIzJSoQdCYnKSscHwFjOz0uLxFSQ0VHSClKKkstH/xAAbAQEAAgMBAQAAAAAAAAAAAAAAAQIDBAUGB//EADQRAAIBAgMFBgQFBQAAAAAAAAABAgMRBCExBRJBUXEiYYGRodETUrHwBhQyweFCY3KCsv/aAAwDAQACEQMRAD8A4RCg9OfPwAAAAAAAAACAAoIACghQAAAAAAAAAAAACo0jKKSQUqIADYJkoKgpCggqNGUaJIKCAEAwykYJRGzBtmCCyADICxQgRAGymUaBUIpEUEFBCgg4pcmQQZzQyZAFjQMgCxoGQCLGyGS5AsaBkoBQZKAUEABQQAFBAAUEABSpmQCDaZTCNJkkFNIyECDaBnJoEMpTKZSSpsyMna8G4DdrHuWIVJ4dklyz5JeL/nJWc4wV5OyMlKjOrLcpq7OpbORRorrf6qqya84RlJeqR7/h/Z7S6fDUO8mvz7Vnn7o9EdjK3HTovQ51TaKWUI365Hdo7Cla9Wdu5e7y9Gfmr4Dq+v0az0OHqtLbTytrnW/DMZQz6n6bfrYQXtzhBN4TnJRTflzNQthOPPbOEvLEoyX7mY1tGXGK9f5NmWwIbt4za73Zr0sflOSJnvuKdlaL8yp+os93OuT968Pl6HiuIaC3TTdd0dr6p9YtecX4o36OJhV/TryOPisBVw2c1dc1p/H3a5xsmkYNGY0io0ZGSSpopnJrIIZQZAIOMACDMAAAAAAUEABQQAFBAAUEABQQAFBAAUEKAAQAFBAAbCZkpIZ9MjJjIyCtj6ZGT5pm0wQfRMZMI2CrOz7P8OervjW8quPO2S8ILw+L6f5Hv9brKNHVmco11QShFJck/CKXidf2R0ap0sZNe3f9ZN+O38xfDHP/AJmdR2601mpp21c5VTVsYN4U8Jpr0bOJiqyqVbN9lO3uz2+xMFTpRgqrtv2cnxS5eHHk7ncafj1Goi3VNSkukJezJn5fqON62N0NZ3spVTm4Ww3SjKM9/JL7q6cjq9Gp0WSno5NPd7ejvfdzjLPNVyfhnonhrzOPq9ZKxXwqhdF2TU5VXQ7vurFJTby0vFfHmVSjC7va/wB+Nz2tLD08LvSTspJa2ejvZPSSksuel+7t+N8S1HEp3uNndzp20xS5LasJyx5vO75+45nCO1N2n08KN2brtrjN5e3De+S979lHlJcUpTttqnLvbqdsqvzu9UNuV8Vg+1VfOi/dDu40ww08yy2047eviZVuuyvdZZeOvkbajTmlBNSit3s3TSSne/d2dfLmfoPYHtbbq7JU6j7alZFZeWpRfTPr+B7nW8Pr1VbrtjlPmpL7UJfei/Bn5D+T6p/6Q3Jcp2WWvHh7LUv+5H7RUa1R2lGUcsrnnNq06blFpK04ptWyd21ppmkmfk2t0zptsqfN1yms4xna2snwPQdt9L3ernPwujCa+UcP8U/U8+d2lPfgpc0fNcTS+FVnDk35cPSxcmkzOSZMhgPpkZM5GQQayXJMjIB8AQEGQpSAApAAQUEAJKCAAAAAoIAQUEGQSAAAAMgEADIBIAGQAEwyAG8r058+iRxHq5d9ClU71Y1CMq8ykpN9feuhrVw3xcfBrZI7TsNRsVs5T3zUowg5dYwxl+v8DlbXx0sHhpVkr2tbq3ZX7ufks2eh2BhKOIrbs7OXyyjeLjbPinGS4NacLM7KXZq1V7o2xnNLLrjlN+7PizpEe3pu59TyvH5R+k2ODz9iViWMp7U2n7n1+Zw/w5t7EYyvOhibN2ck0rcUmmvHJ687t3Nzb2wKeGpKth07L9SzeXO705PhmcVEn0ZIs0eyPGs/UtLYo6ap9EqKsY8tiPy7jnaHXTvt+j1TnCFtkHVXYqnBRlhZTacs+fM/QOAalajR0/ehHupr9KHs/isP5nQ8f7LUWyldYnXJLMrYS7t4S6t9OS8WedT+HNqSPpuzcVSh25K6klZ2Ta0eSd1n58j804rddqWpS0uuquWPbjRK1P3e1l4+ZrUajVezbZVbGmutqy1Ot3R8pOGd3JeLXI5fFaKqsxq1t7xlbrHWo+mMv0Op0F6jZmmd17yu8sk0qoro/cuXxZswtwVvJeh6ilbLdi4Xz0Su/wDHXrZLL+o+tN1qy69Vpb4SXPvq3XL4PKkvxN6SjbNSjodJvy2rYahd3Hzexyz6ROzhwyWsfeU6SiUV0sug4xx+jHnn4s5HZvR0y1X0W/RaeM9yi51RU4POccn0/Ao6ieWrXff1aMDrxacW05RTbSe9ayu85Ray6+J7LsTwKNUfpLnCyyzk3Xju4RT+xH59fgj3NKODw7RwpgoQioxiuSikl6I50TVlJyd2eZxFaVao5ybd+Z5zt/w9zphqY9aHtl+pJrD+Tx+0zwB+x3VxsjKuazCcXCUfOLWGj8o4xw+WkunTP815hL78X9mX8+OTq4CrePw3qvoeW2xht2arLR5Prw81l4HDKYyDoHEsbyRGTSJFjaBhFBU+YAIMgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIPnYcV2W1S30zcJdHjDTXk0+TOa0ZdeTHVpRqRcZq6fB5oz0a8qUlODs1xWRa+0urxjZS3jG/bL92ToY6u7T3StulOyNs91uW8yy+cv56He90jj6vTKUXyNGlsrD0LyowUW+K+9O47VH8RYtVE5y31o07Waeqatx++JzarIySlF5jNLD/nofU6HhFnduyp+CzFeSk+n4Hex6G/Sm5Rz1WRz9sYWlQrp0f0VIqcU9UndW/wBZJrouZ6HsZxJU3OibxXe1tb6K5cl+0uXxUT0fabRyv09lUZbe8g47uuH4cvFZPzmSOdru1upurho6t30iT2Tti/anHml+rLzf7snPxuH7XxFx19zs/h6rOvJUE7OPaTeiinx6ZW62PG67hTqunF1UzlFvdZdqO8qT+7CP+E5Gm4Zdbtl9ZaljbCFaoof7Wdy9D3vAeyEY4t1P1t2FzazGHuiv4nqqdBXHpFfHHM05V+EV58fBHsa21oxvGlHe5t5J8+yretz8+p4dxG2Kg5quC5KuDnOOPJrO09J2V7KrTT+kWydl2GouWMQT64S6NnqFXFeB9FIxOpN5X/Y5tTH1pxcL7sXwSSXokfaK5YNRPnGRtNFTTNnme32khLTxvbSspnGMX0coy6w9/n8mfTtjxO7S0RenmoWWWqO/ZGeIbZN4UuXXB4LWa6/UNS1F07ZLpuwor4RSSXyRvYPDzclUTskcnaeMpxhKi1dteHc/A4+QQHYPMA2jBQDRckKSVPmwAQWAAAAAAICgAgKAAAASAQoAAAAAIAUEKAAAAAAACkRpAgmDSQRtIkqyYPlauR90fK7oBF5nQV/18v1I/wDsehrfI89Ws3y/SjBfPJ39b5GChpLqzu7cj2MI/wCzH/qZ89Xbsi2dVw+DslKx53O2TUk2pJrDTT8GffjNz27V1llfJrn/AAPpwqrbFfBSXoVnadVLkr/foZcLfC7Kr1r2dWUYR6Re9K3065H6d2V4jLU6f6x5uql3djxjfhZjPHvT9UzuGeU7A9dUvdp3/aI9dg4+JgoVZRWnurnTwNV1cPCctWvo7etrmUipGkjSRhNoRNIy5xTUXOKnJNxg5LdJLxS8TeCAeM/KHP2tNDPRXTa+LSX7mePO+7Z66N+pex5jSo15TynJNuTXzePkdDk9BhYuNGKf3d3PH7Qmp4mo1zt5JL9gCFyZzTCKQoINIpEMklWYBcDBBYgLgYAIC4GACAuBgAgLgYAIC4GACApAAAAAAAAAAAAAAAUAI0QpIKjaMo0gUKfOzmfTJhxAR5/XJ1WRt9pqLSko/aUc8zn18Qp2tq3PJtezh588ZycnUadT6nXS4JW3lpeiNZwnFt03qeiw+08LUoQo4ylvqF91puLV9V3rrpwONCX0m3PPZF9UsKXPOPid5THCwfPT6aNaxFYRyDJSp7ibbu3qaW0tofm5RUY7lOCtGK4Lrxb4vjZdX678ny56p/8ADr+0PYbTzH5Pq/q75ecq16bv/p6zacbGO9eXh9Ed3Zqthafj9WYURg04lwaxvH5729/2mPuojj3c5HSy4pqHHY77nB8nDvJOGPLGcHb9vH/rePKqC/DP8TzZ3sPFOjC6vkeSx1SUcTU3W1nz5GgZBsGhY0DIBJsERQQbQMo0SQQGgQRcyDeCYAuZBoYAuZBvAwBcwDeBgC5gGsDAFzINYGALmcEwbwMAXMYGDeBgC5jAwbwTABnAwUAEwUAAFQwbSJIbCNYIkVIFQBgAEaMs2zLAMMyzUjAMiO+4B2jloYygtPGxTw8uxwxhYx9lna/08l/ua/6h/wBw8Yxk1pYWlJuUo5vvfubtPaGIpxUITsl3L2Pa/wBPfPRr5an/AAGl28j46X/yF/cPDmclfyVH5fVmVbVxXzei9js+P8TWsvleod2pRhHa5b8YWOuEdYCGxGKilFaI0pzlUk5S1ZQAWKAAqAKVEKCAjWCI0SQaABBQAAAAAAAAAAAAAAAAAAEAAAAAAKACAoAMmkgASwbQBJUI2gAVYMtAAIhlgAsjLMMAgugZAILEQwACSAAAAAA0ioAEAAEgqKACD//Z">                               
+                <!-- Aqui vai o seu header -->
+            </div>
+    
+            <div class="content">
+                <table>
+                    <tr>
+                        <td>Tabela de Horarios</td>
+                    </tr>
+                    <tr id="nomes">
+                        <td></td>
+                        <td>Cassiana Maria</td>
+                        <td>Maria Clara</td>
+                        <td>Catarina Maria</td>
+                        <td>Yara Silva</td>
+                        <td>Isabela Carvalho</td>
+                        <td>Alice</td>                        
+                    </tr>
+                    <tr>
+                        <td>Segunda</td>
+                        <td> 7:00 a 12:00 </td>
+                        <td>7:00 a 12:00</td>
+                        <td>7:00 a 12:00</td>
+                        <td>12:00 a 19:00</td>
+                        <td>12:00 a 19:00</td>
+                        <td>12:00 a 19:00</td>                       
+                    </tr>
+                    <tr>
+                        <td>Terça</td>
+                        <td>12:00 a 19:00</td>
+                        <td>12:00 a 19:00</td>
+                        <td>12:00 a 19:00</td>
+                        <td>7:00 a 12:00</td>
+                        <td>7:00 a 12:00</td>
+                        <td>7:00 a 12:00</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta</td>
+                        <td> 7:00 a 12:00 </td>
+                        <td>7:00 a 12:00</td>
+                        <td>7:00 a 12:00</td>
+                        <td>12:00 a 19:00</td>
+                        <td>12:00 a 19:00</td>
+                        <td>12:00 a 19:00</td>                       
+                    </tr>
+                    <tr>
+                        <td>Quinta</td>
+                        <td>12:00 a 19:00</td>
+                        <td>12:00 a 19:00</td>
+                        <td>12:00 a 19:00</td>
+                        <td>7:00 a 12:00</td>
+                        <td>7:00 a 12:00</td>
+                        <td>7:00 a 12:00</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td> 7:00 a 12:00 </td>
+                        <td>7:00 a 12:00</td>
+                        <td>7:00 a 12:00</td>
+                        <td>12:00 a 19:00</td>
+                        <td>12:00 a 19:00</td>
+                        <td>12:00 a 19:00</td>                       
+                    </tr>
+                    <tr>
+                        <td>Sabado</td>
+                        <td>12:00 a 19:00</td>
+                        <td>12:00 a 19:00</td>
+                        <td>12:00 a 19:00</td>
+                        <td>7:00 a 12:00</td>
+                        <td>7:00 a 12:00</td>
+                        <td>7:00 a 12:00</td>
+                    </tr>
+                </table>
+                
+                <!-- Aqui vai o seu conteúdo -->
+            </div>
+    
+            <div class="footer">
+                
+
+                Contato : (99) 99 999998888 <br>
+                Fale conosco: clinica@vamosnessa.com
+                <!-- Aqui vai o seu rodapé -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
